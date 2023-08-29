@@ -6,5 +6,5 @@ metadata:
   {{- include "helm-charts.labels" . | nindent 4 }}
   namespace: zk-client
 data:
-  appInitContainerRepo: "{{ .Values.myConfigmap.appInitContainerRepo | quote }}"
-  appInitContainerTag: "{{ .Values.myConfigmap.appInitContainerTag | quote }}"
+  appInitContainerRepo: "{{ .Values.global.dockerBase}}/{{ .Values.image.repo}}"
+  appInitContainerTag: "{{ .Values.image.tag}}"
