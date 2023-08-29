@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "helm-charts.fullname" . }}
+  labels:
+  {{- include "helm-charts.labels" . | nindent 4 }}
+data:
+  appInitContainerRepo: "{{ .Values.myConfigmap.appInitContainerRepo | quote }}"
+  appInitContainerTag: "{{ .Values.myConfigmap.appInitContainerTag | quote }}"
