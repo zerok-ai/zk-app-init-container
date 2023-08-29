@@ -4,6 +4,7 @@ metadata:
   name: {{ include "helm-charts.fullname" . }}
   labels:
   {{- include "helm-charts.labels" . | nindent 4 }}
+  namespace: zk-client
 data:
   appInitContainerRepo: "{{ .Values.myConfigmap.appInitContainerRepo | quote }}"
   appInitContainerTag: "{{ .Values.myConfigmap.appInitContainerTag | quote }}"
