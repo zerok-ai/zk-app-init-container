@@ -3,5 +3,5 @@ global:
   dockerBase: "us-west1-docker.pkg.dev/zerok-dev/zk-client"
 
 image:
-  repo: "zk-scenario-manager"
+  repo: "zk-app-init-container"
   tag: "latest"
