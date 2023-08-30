@@ -1,7 +1,6 @@
 
 global:
   dockerBase: "us-west1-docker.pkg.dev/zerok-dev/zk-client"
-
-image:
-  repo: ""
-  tag: "latest"
+myConfigmap:
+  appInitContainerRepo: myValue
+  appInitContainerTag: mySecondValue
