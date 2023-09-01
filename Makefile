@@ -1,7 +1,7 @@
 NAME = init-container
 IMAGE_PREFIX = us-west1-docker.pkg.dev/zerok-dev/stage
 IMAGE_NAME = init-container
-IMAGE_VERSION = dev
+IMAGE_VERSION = redis-namechange
 
 export GO111MODULE=on
 
