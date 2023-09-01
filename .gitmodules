@@ -1,0 +1,3 @@
+[submodule "zk-java-otel-extension"]
+	path = zk-java-otel-extension
+	url = git@github.com:zerok-ai/zk-java-otel-extension.git
