@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: my-configmap
 data:
-  appInitContainerRepo: "myValue"
-  appInitContainerTag: "mySecondValue"
+  appInitContainerRepo: "zk-app-init-container"
+  appInitContainerTag: "0.0.1"
