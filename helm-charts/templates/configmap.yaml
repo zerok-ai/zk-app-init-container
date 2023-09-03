@@ -5,6 +5,5 @@ metadata:
   labels:
     {{- include "helm-charts.labels" . | nindent 4 }}
 data:
-  config.yaml: |
-    appInitContainerRepo: "{{ .Values.global.dockerBase }}/{{ .Values.image.repo }}"
-    appInitContainerTag: "{{ .Values.image.tag | quote }}"
+  appInitContainerRepo: "{{ .Values.global.dockerBase }}/{{ .Values.image.repo }}"
+  appInitContainerTag: "{{ .Values.image.tag | quote }}"
